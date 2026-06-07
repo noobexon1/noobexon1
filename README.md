@@ -1,5 +1,7 @@
-<div align="center">
+## 📊 My Stats
 
+<div align="center">
+  
 ![Stats](./profile/stats.svg)
 ![Top Languages](./profile/top-langs.svg)
 
@@ -11,7 +13,6 @@
   <source media="(prefers-color-scheme: light)" srcset="./profile/github-snake.svg" />
   <img alt="snake animation" src="./profile/github-snake.svg" />
 </picture>
-
 </div>
 
 ## 📝 Latest Blog Posts
