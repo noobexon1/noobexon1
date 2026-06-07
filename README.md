@@ -4,4 +4,6 @@
 
 ![Top Languages](./profile/top-langs.svg)
 
+![Trophy](./profile/trophy.svg)
+
 </div>
