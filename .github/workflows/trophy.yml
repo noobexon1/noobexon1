@@ -35,7 +35,7 @@ jobs:
         working-directory: trophy-src
         run: |
           deno run --allow-net --allow-env --allow-read --allow-write \
-            ./render_svg.ts "${{ github.repository_owner }}" "$GITHUB_WORKSPACE/profile/trophy.svg" nord
+            ./render_svg.ts "${{ github.repository_owner }}" "$GITHUB_WORKSPACE/profile/trophy.svg" tokyonight
 
       - name: Commit
         run: |
