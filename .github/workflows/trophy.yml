@@ -36,7 +36,7 @@ jobs:
         run: |
           deno run --allow-net --allow-env --allow-read --allow-write \
             ./render_svg.ts "${{ github.repository_owner }}" "$GITHUB_WORKSPACE/profile/trophy.svg" nord
-
+            
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
