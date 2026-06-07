@@ -1,0 +1,46 @@
+name: Update trophy
+
+on:
+  schedule:
+    - cron: "30 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  trophy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+
+      - name: Checkout trophy source
+        uses: actions/checkout@v4
+        with:
+          repository: ryo-ma/github-profile-trophy
+          ref: master            # see the pinning note below
+          path: trophy-src
+
+      - name: Set up Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Provide token to the script
+        working-directory: trophy-src
+        run: echo "GITHUB_TOKEN1=${{ secrets.GITHUB_TOKEN }}" > .env
+
+      - name: Render trophy SVG
+        working-directory: trophy-src
+        run: |
+          deno run --allow-net --allow-env --allow-read --allow-write \
+            ./render_svg.ts "${{ github.repository_owner }}" "$GITHUB_WORKSPACE/profile/trophy.svg" tokyonight
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/trophy.svg
+          git commit -m "Update trophy" || exit 0
+          git push
