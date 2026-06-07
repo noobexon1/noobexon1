@@ -17,4 +17,6 @@
 ## 📝 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
+- [Frida on Android 0x1 - Hooking Native Libraries](https://noobexon1.github.io/posts/frida_on_android_hooking_native_libraries_post/)
+- [Frida on Android 0x0 - Initial Setup](https://noobexon1.github.io/posts/frida_on_android_setup_post/)
 <!-- BLOG-POST-LIST:END -->
