@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">noobexon1&#39;s GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 820, Total Commits  (last year) : 409, Total PRs: 16, Total Issues: 4, Contributed to (last year): 1</desc>
+        <desc id="descId">Total Stars Earned: 824, Total Commits  (last year) : 409, Total PRs: 16, Total Issues: 4, Contributed to (last year): 1</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 92.17114084749815;
+        stroke-dashoffset: 92.14910560088576;
       }
     }
   
@@ -169,7 +169,7 @@
         x="224.01"
         y="12.5"
         data-testid="stars"
-      >820</text>
+      >824</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
